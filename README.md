@@ -24,16 +24,16 @@ menggunakan algoritma CNN
     <img width="200" height="400" src="gambar/utama2.jpg">
   </figure>
   <figure style="margin-bottom: 20px; text-align: center;">
-  <p>Halaman Utama Aplikasi</p>
-    <img width="200" height="400" src="gambar/utama2.jpg">
+  <p>Halaman Deteksi Penyakit</p>
+    <img width="200" height="400" src="gambar/deteksi.jpg">
   </figure>
   <figure style="margin-bottom: 20px; text-align: center;">
-  <p>Halaman Utama Aplikasi</p>
-    <img width="200" height="400" src="gambar/utama2.jpg">
+  <p>Halaman Info Penyakit</p>
+    <img width="200" height="400" src="gambar/infopenyakit.jpg">
   </figure>
   <figure style="margin-bottom: 20px; text-align: center;">
-  <p>Halaman Utama Aplikasi</p>
-    <img width="200" height="400" src="gambar/utama2.jpg">
+  <p>Halaman Tentang</p>
+    <img width="200" height="400" src="gambar/tentang.jpg">
   </figure>
 </div>
 
