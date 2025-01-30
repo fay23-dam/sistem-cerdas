@@ -19,8 +19,6 @@ menggunakan algoritma CNN
   <figure style="margin-bottom: 20px; text-align: center;">
     <img width="200" height="400" src="gambar/utama.jpg">
   </figure>
-</div>
-<div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
   <p>Halaman Utama Aplikasi</p>
   <figure style="margin-bottom: 20px; text-align: center;">
     <img width="200" height="400" src="gambar/utama2.jpg">
