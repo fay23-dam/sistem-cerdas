@@ -14,27 +14,25 @@ menggunakan algoritma CNN
 <p>Onalisa Mayor (202155202012)</p>
 
 ## Tampilan Aplikasi 💻
-<div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
-  <figure style="margin-bottom: 20px; text-align: center;">
-  <p>Halaman Splashh Screen</p>
-    <img width="200" height="400" src="gambar/utama.jpg">
+<div style="display: flex; flex-wrap: wrap; gap: 20px;">
+  <figure style="width: 45%; text-align: center;">
+    <p>Halaman Splash Screen</p>
+    <img width="100%" height="auto" src="gambar/utama.jpg">
   </figure>
-  <figure style="margin-bottom: 20px; text-align: center;">
-  <p>Halaman Utama Aplikasi</p>
-    <img width="200" height="400" src="gambar/utama2.jpg">
+  <figure style="width: 45%; text-align: center;">
+    <p>Halaman Utama Aplikasi</p>
+    <img width="100%" height="auto" src="gambar/utama2.jpg">
   </figure>
-  <figure style="margin-bottom: 20px; text-align: center;">
-  <p>Halaman Deteksi Penyakit</p>
-    <img width="200" height="400" src="gambar/deteksi.jpg">
+  <figure style="width: 45%; text-align: center;">
+    <p>Halaman Deteksi Penyakit</p>
+    <img width="100%" height="auto" src="gambar/deteksi.jpg">
   </figure>
-  <figure style="margin-bottom: 20px; text-align: center;">
-  <p>Halaman Info Penyakit</p>
-    <img width="200" height="400" src="gambar/infopenyakit.jpg">
+  <figure style="width: 45%; text-align: center;">
+    <p>Halaman Info Penyakit</p>
+    <img width="100%" height="auto" src="gambar/infopenyakit.jpg">
   </figure>
-  <figure style="margin-bottom: 20px; text-align: center;">
-  <p>Halaman Tentang</p>
-    <img width="200" height="400" src="gambar/tentang.jpg">
+  <figure style="width: 45%; text-align: center;">
+    <p>Halaman Tentang</p>
+    <img width="100%" height="auto" src="gambar/tentang.jpg">
   </figure>
 </div>
-
-
