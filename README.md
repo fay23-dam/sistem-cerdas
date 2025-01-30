@@ -37,4 +37,10 @@ menggunakan algoritma CNN
   </figure>
 </div>
 
+## *📫 Reach me*
+<a href="https://instagram.com/saddamsatriia" target="_blank"><img src="https://img.shields.io/badge/-Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white" /></a>
+![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github)
+
+##
+🚀 From [sazara](https://github.com/fay23-dam)
 
