@@ -1,7 +1,7 @@
 ### Hey Guys <img src="https://media.giphy.com/media/mGcNjsfWAjY5AEZNw6/giphy.gif" width="50">
 # Tugas UAS Sistem Cerdas
 
-Tugas uas sistem cerdas dengan judul "Sistem Pakar diagnosa penyakit pada tanaman tomat menggunakan CNN berbasis android"
+Tugas uas sistem cerdas dengan judul "Sistem Pakar diagnosa penyakit pada Daun tomat menggunakan CNN berbasis android"
 menggunakan algoritma CNN
 
 ## Our Team 🌱
