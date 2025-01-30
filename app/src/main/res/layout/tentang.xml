@@ -8,139 +8,336 @@
     android:background="@drawable/tentang"
     android:padding="16dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Informasi Mahasiswa"
-        android:fontFamily="@font/boogaloo"
-        android:letterSpacing=".1"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="32sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/cardView1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <!-- Menambahkan ScrollView untuk membungkus konten yang panjang -->
+    <android.widget.ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cardView1"
-        app:layout_constraintHeight="wrap_content"
-        android:layout_width="0dp"
-        android:padding="4dp"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="25dp"
-        android:layout_marginTop="270dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/cardView2"
-        app:layout_constraintHorizontal_bias="0.5">
-
-        <!-- Konten Card Pertama -->
-        <RelativeLayout
+        <!-- Menggunakan LinearLayout sebagai container untuk CardView -->
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:background="@drawable/shadowdeteksi2">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-            <!-- Bagian Kiri (Foto) -->
-            <ImageView
-                android:id="@+id/photoImageView1"
-                android:layout_width="150dp"
-                android:layout_height="match_parent"
-                android:src="@drawable/gambar_test"
-                android:scaleType="centerCrop"
-                android:layout_alignParentStart="true"
-                android:layout_centerVertical="true"/>
-
-            <!-- Bagian Kanan (Nama dan Deskripsi) -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_toEndOf="@+id/photoImageView1"
-                android:layout_marginStart="16dp"
-                android:orientation="vertical"
-                android:gravity="center_vertical"
-                app:layout_constraintStart_toEndOf="@+id/photoImageView1"
+            <!-- Card 1 -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardView1"
+                app:layout_constraintHeight="wrap_content"
+                android:layout_width="match_parent"
+                android:padding="4dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="25dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent">
 
-                <TextView
-                    android:id="@+id/nameTextView1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Astita Ayu"
-                    android:textColor="@color/black"
-                    android:textSize="24sp"
-                    android:textStyle="bold"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/shadowdeteksi2">
 
-                <TextView
-                    android:id="@+id/descriptionTextView1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="202355202015"
-                    android:textSize="14sp"/>
-            </LinearLayout>
+                    <!-- Bagian Kanan (Nama dan Deskripsi) -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical"
+                        app:layout_constraintEnd_toEndOf="parent">
 
-        </RelativeLayout>
-    </com.google.android.material.card.MaterialCardView>
+                        <TextView
+                            android:id="@+id/nameTextView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Moh Saddam Satria Pattanang"
+                            android:textColor="@color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold"/>
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cardView2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="25dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView1"
-        app:layout_constraintHorizontal_bias="0.5">
+                        <TextView
+                            android:id="@+id/descriptionTextView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="202155202049"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
 
-        <!-- Konten Card Kedua -->
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:background="@drawable/shadowdeteksi2">
+                </RelativeLayout>
 
-            <!-- Bagian Kiri (Foto) -->
-            <ImageView
-                android:id="@+id/photoImageView2"
-                android:layout_width="150dp"
-                android:layout_height="match_parent"
-                android:src="@drawable/gambar_test"
-                android:scaleType="centerCrop"
-                android:layout_alignParentStart="true"
-                android:layout_centerVertical="true"/>
+            </com.google.android.material.card.MaterialCardView>
 
-            <!-- Bagian Kanan (Nama dan Deskripsi) -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_toEndOf="@+id/photoImageView2"
-                android:layout_marginStart="16dp"
-                android:orientation="vertical"
-                android:gravity="center_vertical"
-                app:layout_constraintStart_toEndOf="@+id/photoImageView2"
+            <!-- Card 2 -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardView2"
+                app:layout_constraintHeight="wrap_content"
+                android:layout_width="match_parent"
+                android:padding="4dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="25dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/cardView1"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent">
 
-                <TextView
-                    android:id="@+id/nameTextView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Nini Wara Siti Fatimah Latupuno"
-                    android:textColor="@color/black"
-                    android:textSize="24sp"
-                    android:textStyle="bold"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/shadowdeteksi2">
 
-                <TextView
-                    android:id="@+id/descriptionTextView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="202355202033"
-                    android:textSize="14sp"/>
-            </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical">
 
-        </RelativeLayout>
-    </com.google.android.material.card.MaterialCardView>
+                        <TextView
+                            android:id="@+id/nameTextView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bakti Prasetyo"
+                            android:textColor="@color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
 
+                        <TextView
+                            android:id="@+id/descriptionTextView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="202155202066"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Card 3 -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardView3"
+                app:layout_constraintHeight="wrap_content"
+                android:layout_width="match_parent"
+                android:padding="4dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="25dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/cardView2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/shadowdeteksi2">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/nameTextView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Devi Maharani"
+                            android:textColor="@color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/descriptionTextView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="202155202068"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Lanjutkan dengan Card 4, Card 5, Card 6, dan Card 7 -->
+            <!-- Card 4 -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardView4"
+                app:layout_constraintHeight="wrap_content"
+                android:layout_width="match_parent"
+                android:padding="4dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="25dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/cardView3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/shadowdeteksi2">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/nameTextView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Muhammad Shaleh Syakil Syam"
+                            android:textColor="@color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/descriptionTextView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="202155202099"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Lanjutkan dengan Card 5, Card 6, dan Card 7 -->
+            <!-- Card 5 -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardView5"
+                app:layout_constraintHeight="wrap_content"
+                android:layout_width="match_parent"
+                android:padding="4dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="25dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/cardView4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/shadowdeteksi2">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/nameTextView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Adjid Ardiansyah Hamdar"
+                            android:textColor="@color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/descriptionTextView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="202155202028"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Card 6 -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardView6"
+                app:layout_constraintHeight="wrap_content"
+                android:layout_width="match_parent"
+                android:padding="4dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="25dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/cardView5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/shadowdeteksi2">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/nameTextView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Maya Nurlati Kelian"
+                            android:textColor="@color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/descriptionTextView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="202155202077"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Card 7 -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardView7"
+                app:layout_constraintHeight="wrap_content"
+                android:layout_width="match_parent"
+                android:padding="4dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="25dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/cardView6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/shadowdeteksi2">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/nameTextView7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Onalisa Mayor"
+                            android:textColor="@color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/descriptionTextView7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="202155202012"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Tambahkan card lainnya dengan cara yang sama -->
+
+        </LinearLayout>
+    </android.widget.ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
