@@ -14,12 +14,12 @@ menggunakan algoritma CNN
 <p>Onalisa Mayor (202155202012)</p>
 
 ## Tampilan Aplikasi 💻
-<div style="display: flex; flex-wrap: wrap; gap: 20px;">
-  <figure style="width: 45%; text-align: center;">
+<div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+  <figure style="margin-bottom: 20px; text-align: center;">
   <p>Halaman Splashh Screen</p>
     <img width="200" height="400" src="gambar/utama.jpg">
   </figure>
-  <figure style="width: 45%; text-align: center;">
+  <figure style="margin-bottom: 20px; text-align: center;">
   <p>Halaman Utama Aplikasi</p>
     <img width="200" height="400" src="gambar/utama2.jpg">
   </figure>
