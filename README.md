@@ -15,12 +15,12 @@ menggunakan algoritma CNN
 
 ## Tampilan Aplikasi 💻
 <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
-  <p>Halaman Splashh Screen</p>
   <figure style="margin-bottom: 20px; text-align: center;">
+  <p>Halaman Splashh Screen</p>
     <img width="200" height="400" src="gambar/utama.jpg">
   </figure>
-  <p>Halaman Utama Aplikasi</p>
   <figure style="margin-bottom: 20px; text-align: center;">
+  <p>Halaman Utama Aplikasi</p>
     <img width="200" height="400" src="gambar/utama2.jpg">
   </figure>
 </div>
